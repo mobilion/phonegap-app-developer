@@ -115,4 +115,7 @@
     <preference name="WebViewBounce" value="false" />
     <access origin="*" />
     <content src="index.html" />
+    <feature name="IBeaconPlugin">
+        <param name="ios-package" value="IBeaconPlugin" />
+    </feature>
 </widget>

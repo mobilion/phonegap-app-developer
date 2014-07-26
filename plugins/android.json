@@ -79,6 +79,10 @@
                         {
                             "xml": "<feature name=\"Contacts\"><param name=\"android-package\" value=\"org.apache.cordova.contacts.ContactManager\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"IBeaconPlugin\"><param name=\"android-package\" value=\"eu.mobilion.ibeacon.IBeaconPlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -134,6 +138,24 @@
                     "/manifest": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<service android:name=\"com.radiusnetworks.ibeacon.service.IBeaconService\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:name=\"com.radiusnetworks.ibeacon.IBeaconIntentProcessor\" />",
                             "count": 1
                         }
                     ]
@@ -197,6 +219,9 @@
             "PACKAGE_NAME": "com.adobe.phonegap.app"
         },
         "org.apache.cordova.contacts": {
+            "PACKAGE_NAME": "com.adobe.phonegap.app"
+        },
+        "eu.mobilion.ibeacon": {
             "PACKAGE_NAME": "com.adobe.phonegap.app"
         }
     },

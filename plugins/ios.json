@@ -66,6 +66,12 @@
                             "xml": "true",
                             "count": 4
                         }
+                    ],
+                    "CoreBluetooth.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
                     ]
                 }
             },
@@ -163,6 +169,10 @@
                         {
                             "xml": "<feature name=\"Contacts\"><param name=\"ios-package\" value=\"CDVContacts\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"IBeaconPlugin\"><param name=\"ios-package\" value=\"IBeaconPlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -225,6 +235,9 @@
             "PACKAGE_NAME": "com.adobe.phonegap.app"
         },
         "org.apache.cordova.contacts": {
+            "PACKAGE_NAME": "com.adobe.phonegap.app"
+        },
+        "eu.mobilion.ibeacon": {
             "PACKAGE_NAME": "com.adobe.phonegap.app"
         }
     },

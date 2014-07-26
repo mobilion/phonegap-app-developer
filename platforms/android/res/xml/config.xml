@@ -91,4 +91,7 @@
     <preference name="WebViewBounce" value="false" />
     <access origin="*" />
     <content src="index.html" />
+    <feature name="IBeaconPlugin">
+        <param name="android-package" value="eu.mobilion.ibeacon.IBeaconPlugin" />
+    </feature>
 </widget>
